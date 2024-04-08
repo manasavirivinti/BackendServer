@@ -102,6 +102,6 @@ app.get("/linkedin/callback", async (req, res) => {
 
 app.use("/auth",require("./routes/loginroute"));
 app.use("/user",require("./routes/user"));
-app.listen(5000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("listening to port at 5000");
 })
